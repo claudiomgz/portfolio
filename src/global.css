@@ -1,0 +1,101 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*,
+*::after,
+*::before {
+	transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+button,
+li,
+a,
+input,
+div {
+	transition: background-color 0.2s ease, color 0.2s ease, transform 0.2s ease;
+}
+
+img {
+	transition: transform 0.2s ease;
+}
+
+main {
+	overflow: hidden;
+}
+
+::-webkit-scrollbar-thumb {
+	background: #3a84f5;
+	border-radius: 0.5rem;
+}
+
+::-webkit-scrollbar {
+	width: 0.5rem;
+}
+
+::-webkit-scrollbar-track {
+	background: #1b1b2f;
+}
+
+.fadeIn {
+	animation: fadein 0.5s linear 1 forwards;
+}
+
+.showAlert {
+	animation: showAlert 0.5s forwards;
+}
+
+.hideAlert {
+	animation: hideAlert 0.5s forwards;
+}
+
+@keyframes fadein {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+@keyframes showAlert {
+	0% {
+		right: -500px;
+	}
+	100% {
+		right: 0;
+	}
+}
+
+@keyframes hideAlert {
+	0% {
+		right: 0;
+	}
+	100% {
+		right: -500px;
+	}
+}
+
+@media screen and (min-width: 768px) {
+	@keyframes showAlert {
+		0% {
+			right: -500px;
+		}
+		100% {
+			right: 15px;
+		}
+	}
+
+	@keyframes hideAlert {
+		0% {
+			right: 15px;
+		}
+		100% {
+			right: -500px;
+		}
+	}
+}
