@@ -1,8 +1,8 @@
 import { component$, useContext, $, useSignal, useVisibleTask$ } from '@builder.io/qwik';
 import { UIContext } from '~/context/ui/ui-context';
 
-import NavbarDesktop from '../navbar/navbar-desktop';
-import NavbarMobile from '../navbar/navbar-mobile';
+import NavbarDesktop from '~/components/shared/navbar/navbar-desktop';
+import NavbarMobile from '~/components/shared/navbar/navbar-mobile';
 
 const observerOptions = {
 	root: null,
@@ -10,22 +10,15 @@ const observerOptions = {
 	threshold: 0,
 };
 
-export enum Section {
-	Inicio = 'inicio',
-	Conoceme = 'conoceme',
-	Proyectos = 'proyectos',
-	Contacto = 'contacto',
-}
-
 export default component$(() => {
 	const { theme, isScrolled, showMenu } = useContext(UIContext);
 
-	const isNameActive = useSignal<Section>(Section.Inicio);
+	const isNameActive = useSignal<string>('inicio');
 
 	const onSectionEnterViewport = $((entries: IntersectionObserverEntry[]) => {
 		entries.forEach((entry) => {
 			if (entry.isIntersecting) {
-				const id = entry.target.getAttribute('id') as Section;
+				const id = entry.target.getAttribute('id') as string;
 				isNameActive.value = id;
 			}
 		});
@@ -47,12 +40,6 @@ export default component$(() => {
 				observer.unobserve(section);
 			});
 		});
-	});
-
-	useVisibleTask$(({ track }) => {
-		track(() => isNameActive.value);
-
-		window.history.replaceState(null, '', `/#${isNameActive.value}`);
 	});
 
 	return (

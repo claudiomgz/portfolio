@@ -99,59 +99,59 @@ export const abilities: {
 
 export const projects = [
 	{
-		title: 'C# .NET Developer',
+		title: 'Desarrollador C# .NET / SQL Server',
 		description:
-			'Desarrollo y asdasdasdasd.',
-		technologies: ['PHP', 'Html', 'Css', 'JavaScript', 'Bootstrap', 'MySQL'],
+			'Aplicaciones de escritorio en C# con MVC, Windows Forms, LinQ, SQL Server y Crystal Reports. Migración de viejos sistemas en VB6 a C#. Introducción a aplicaciones moviles con React Native. Administración de servidores.',
+		technologies: ['C#', 'Html', 'Css', 'JavaScript', 'Bootstrap', 'MySQL'],
 		imageUrl: 'proyecto-2',
 		githubUrl: '#',
-		websiteUrl: 'https://www.mipj.org.ar',
+		websiteUrl: 'http://www.mipj.org.ar/',
 		updatedAt: `${new Date().getFullYear()}-${new Date().getMonth() + 1}-${new Date().getDate()}`,
-		createdAt: `2023-01-10`,
+		createdAt: `2021-11-02`,
 		byMe: false,
 	},
 	{
-		title: 'Freelance',
+		title: 'Catálogo de productos con Node.js',
 		description:
-			'dasdasd.',
+			'El sitio contiene la vista del catalogo en la pagina de inicio, en donde el usuario puede navegar, elegir y ver detalles de cada producto para luego ponerse en contacto con el vendedor para obtener mas información y efectuar la compra. Además, el sistema cuenta con acceso al administrador de los productos que se muestran.',
 		technologies: ['Laravel', 'Html', 'Css', 'JavaScript', 'TailwindCss', 'MySQL'],
 		imageUrl: 'proyecto-2',
-		githubUrl: '#',
-		websiteUrl: 'https://www.web.com',
+		githubUrl: 'https://github.com/claudiomgz/catalogo-de-productos',
+		websiteUrl: 'https://catalogoapp.onrender.com/',
 		createdAt: '2022-12-12',
-		updatedAt: '2023-01-05',
-		byMe: false,
-	},
-	{
-		title: 'proyecto1',
-		description:
-			'detalle.',
-		technologies: ['React', 'JavaScript', 'TailwindCss', 'NodeJs', 'MongoDB'],
-		imageUrl: 'proyecto-1',
-		githubUrl: 'https://github.com/claudiomgz',
-		websiteUrl: 'https://web.app',
-		createdAt: '2022-11-12',
-		updatedAt: '2022-12-13',
+		updatedAt: '2023-08-05',
 		byMe: true,
 	},
 	{
-		title: 'proyecto-2',
+		title: 'Anotador de truco web',
 		description:
-			'detalle.',
+			'Responsive y desarrllado en simple JavaScript Vanilla. Utilización de Bootstrap para el diseño, NPM en la etapa de desarrollo. Permite llevar la cuenta de una partida de truco argentino entre dos equipos.',
+		technologies: ['React', 'JavaScript', 'TailwindCss', 'NodeJs', 'MongoDB'],
+		imageUrl: 'proyecto-1',
+		githubUrl: 'https://github.com/claudiomgz/anotador-de-truco',
+		websiteUrl: 'https://anotadordetruco.netlify.app/',
+		createdAt: '2021-11-12',
+		updatedAt: '2021-12-13',
+		byMe: true,
+	},
+	{
+		title: 'Guia de Hoteles',
+		description:
+			'Sitio web estático con diseño responsive aplicando clases con bootstrap. Preprocesadores Less y Sass. NPM en la etapa de desarrollo con algunos módulos de node.js.',
 		technologies: ['React', 'JavaScript', 'TailwindCss', 'NodeJs', 'MongoDB'],
 		imageUrl: 'proyecto-2',
-		githubUrl: 'https://github.com/claudiomgz',
-		websiteUrl: 'https://web.app',
-		createdAt: '2022-10-12',
-		updatedAt: '2022-12-12',
+		githubUrl: 'https://github.com/JuanDa14/treelink-frontend',
+		websiteUrl: 'https://guiadehoteles.netlify.app/',
+		createdAt: '2020-10-12',
+		updatedAt: '2020-12-12',
 		byMe: true,
 	},
 ];
 
 export const socials = [
 	{
-		title: '@claudiomonguzzi',
-		href: 'https://www.linkedin.com/in/claudiomonguzzi',
+		title: 'LinkedIn',
+		href: 'https://www.linkedin.com/in/claudiomonguzzi/',
 		icon: 'linkedin',
 	},
 	{
@@ -160,7 +160,7 @@ export const socials = [
 		icon: 'gmail',
 	},
 	{
-		title: '@claudiomgz ',
+		title: '@claudiomgz',
 		href: 'https://github.com/claudiomgz',
 		icon: 'github',
 	},

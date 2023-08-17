@@ -1,5 +1,6 @@
 import { component$ } from '@builder.io/qwik';
 import { abilities } from '~/data/seed';
+import Image from '~/components/image';
 
 interface Props {
 	type: 'Frontend' | 'Backend' | 'DataBase' | 'Others';
@@ -17,8 +18,9 @@ export default component$(({ type }: Props) => {
 					.map((ability) => (
 						<li key={ability.name}>
 							<div class='flex flex-col items-center gap-2'>
-								<img
-									class='w-10 h-10'
+								<Image
+									width={40}
+									height={40}
 									src={`/icons/${ability.name.toLowerCase()}.svg`}
 									alt={ability.name}
 								/>

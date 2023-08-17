@@ -1,5 +1,6 @@
 import { component$ } from '@builder.io/qwik';
-import Timeline from './timeline';
+
+import Timeline from '~/components/timeline';
 
 export default component$(() => {
 	return (

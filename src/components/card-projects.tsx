@@ -1,6 +1,8 @@
 import { component$ } from '@builder.io/qwik';
+
 import { currentDate, projects } from '~/data/seed';
 import { formatDate } from '~/helpers/format-date';
+import Image from '~/components/image';
 
 export default component$(() => {
 	return (
@@ -12,7 +14,7 @@ export default component$(() => {
 				)
 				.map((project, index) => (
 					<li key={index}>
-						<div class='border bg-white dark:bg-dark-body dark:border-gray-600 relative flex items-center justify-between rounded-lg overflow-hidden hover:shadow'>
+						<div class='border bg-white dark:bg-dark-body dark:border-gray-600 relative flex items-center justify-between rounded-lg overflow-hidden hover:shadow transition-shadow ease-in-out duration-200'>
 							<div class='p-4'>
 								<h2 class='capitalize font-semibold text-black dark:text-white'>
 									{project.title}
@@ -33,7 +35,7 @@ export default component$(() => {
 									<ul class='flex flex-wrap items-center gap-2'>
 										{project.technologies.map((technology) => (
 											<li key={technology}>
-												<img
+												<Image
 													width={20}
 													height={20}
 													src={`/icons/${technology.toLowerCase()}.svg`}
@@ -48,9 +50,9 @@ export default component$(() => {
 											target='_blank'
 											rel='noopener noreferrer'
 											title='Github'
-											class='hover:scale-125'
+											class='hover:scale-125 transition-transform ease-in-out duration-200'
 										>
-											<img
+											<Image
 												width={25}
 												height={25}
 												src='/icons/github.svg'
@@ -63,12 +65,12 @@ export default component$(() => {
 											target='_blank'
 											rel='noopener noreferrer'
 											title='Ver Proyecto'
-											class='hover:scale-125'
+											class='hover:scale-125 transition-transform ease-in-out duration-200'
 										>
-											<img
+											<Image
 												width={25}
 												height={25}
-												src='/icons/show.svg'
+												src='/icons/website.svg'
 												alt='send'
 												class='dark:filter dark:invert'
 											/>

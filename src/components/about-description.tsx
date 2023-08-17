@@ -1,5 +1,5 @@
 import { component$ } from "@builder.io/qwik";
-import Experience from "./experience";
+import Experience from "~/components/experience";
 
 export default component$(() => {
   return (
@@ -8,23 +8,18 @@ export default component$(() => {
         Sobre mí
       </h2>
       <p class="mb-4 text-gray-800 dark:text-white">
-        Soy Claudio Rubén Monguzzi, tengo 28 años. Actualmente resido en Santa
-        Fe capital, donde me desempeño como desarrollador C#/.NET SQL Server y
-        Administrador de Sistemas en la Mutual de Integrantes del Poder
-        Judicial. Admemás estudio desarrollo web de forma autodidacta y soy
-        estudiante universitario de sistemas.
+        Experiencia en C#, Node.js y SQL Server, con enfoque en la programación
+        orientada a objetos, patrones de diseño y la optimización de consultas.
+        Capaz de crear servicios web, aplicaciones de escritorio y gestionar
+        bases de datos relacionales.
       </p>
-      <p class="mb-4 text-gray-900 font-semibold dark:text-gray-400">
-        Mis principales objetivos son formarme en el ámbito laboral y poner en
-        uso mis aprendizajes adquiridos, así como seguir aprendiendo en base a
-        las nuevas experiencias. Mi objetivo es crear productos que ofrezcan
-        experiencias excepcionales, con un diseño atractivo, intuitivo y de alta
-        calidad.
+      <p class="mb-4 text-gray-900 font-medium dark:text-gray-400">
+        Mi objetivo es crear productos que ofrezcan experiencias excepcionales,
+        con un diseño atractivo, intuitivo y de alta calidad.
       </p>
       <p class="mb-4 text-gray-800 dark:text-white">
-        Soy un apasionado por la programación Backend, la lógica y el manejo de
-        datos. Estudio Ingeniería en Sistemas en la UTN Facultad Regional Santa
-        Fe, en donde cuento con 16 materias arpobadas.
+        Comprometido con el aprendizaje continuo y adaptación a las últimas
+        tecnologías.
       </p>
       <Experience />
     </div>

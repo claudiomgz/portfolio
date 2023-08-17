@@ -1,5 +1,6 @@
 import { component$ } from '@builder.io/qwik';
-import CardAbilities from './card/card-abilities';
+
+import CardAbilities from '~/components/card-abilities';
 
 export default component$(() => {
 	return (

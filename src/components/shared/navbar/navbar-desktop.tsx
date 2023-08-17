@@ -1,6 +1,5 @@
 import { component$ } from '@builder.io/qwik';
 
-import { Section } from '../header/header';
 import ModeSwitch from '~/components/ui/mode-switch';
 
 interface Props {
@@ -10,7 +9,11 @@ interface Props {
 export default component$(({ isNameActive }: Props) => {
 	return (
 		<nav class='hidden py-1 px-5 mx-auto sm:flex justify-between items-center max-w-4xl'>
-			<a title='IconoInicio' href='#inicio' class='hover:scale-110'>
+			<a
+				title='IconoInicio'
+				href='#inicio'
+				class='hover:scale-110 transition-transform duration-200 ease-in-out'
+			>
 				<svg
 					xmlns='http://www.w3.org/2000/svg'
 					fill='none'
@@ -26,57 +29,57 @@ export default component$(({ isNameActive }: Props) => {
 					/>
 				</svg>
 			</a>
-			<ul class='flex gap-4 text-sm items-center font-medium capitalize'>
+			<ul class='flex gap-4 text-sm items-center font-medium'>
 				<li class='py-4'>
 					<a
-						title={Section.Inicio}
-						href={`#${Section.Inicio}`}
+						title='Inicio'
+						href='#inicio'
 						class={`${
-							isNameActive === Section.Inicio
+							isNameActive === 'inicio'
 								? 'text-blue-500 dark:text-gray-400'
 								: 'text-black dark:text-white'
-						} hover:text-blue-500 dark:hover:text-gray-400`}
+						} hover:text-blue-500 dark:hover:text-gray-400 transition ease-in-out duration-200`}
 					>
-						{Section.Inicio}
+						Inicio
 					</a>
 				</li>
 				<li class='py-4'>
 					<a
-						title={Section.Conoceme}
-						href={`#${Section.Conoceme}`}
+						title='Sobre mi'
+						href='#sobre mi'
 						class={`${
-							isNameActive === Section.Conoceme
+							isNameActive === 'sobre mi'
 								? 'text-blue-500 dark:text-gray-400'
 								: 'text-black dark:text-white'
-						} hover:text-blue-500 dark:hover:text-gray-400`}
+						} hover:text-blue-500 dark:hover:text-gray-400 transition ease-in-out duration-200`}
 					>
-						{Section.Conoceme}
+						Sobre mi
 					</a>
 				</li>
 				<li class='py-4'>
 					<a
-						title={Section.Proyectos}
-						href={`#${Section.Proyectos}`}
+						title='Proyectos'
+						href='#proyectos'
 						class={`${
-							isNameActive === Section.Proyectos
+							isNameActive === 'proyectos'
 								? 'text-blue-500 dark:text-gray-400'
 								: 'text-black dark:text-white'
-						} hover:text-blue-500 dark:hover:text-gray-400`}
+						} hover:text-blue-500 dark:hover:text-gray-400 transition ease-in-out duration-200`}
 					>
-						{Section.Proyectos}
+						Proyectos
 					</a>
 				</li>
 				<li class='py-4'>
 					<a
-						title={Section.Contacto}
-						href={`#${Section.Contacto}`}
+						title='Contacto'
+						href='#contacto'
 						class={`${
-							isNameActive === Section.Contacto
+							isNameActive === 'contacto'
 								? 'text-blue-500 dark:text-gray-400'
 								: 'text-black dark:text-white'
-						} hover:text-blue-500 dark:hover:text-gray-400`}
+						} hover:text-blue-500 dark:hover:text-gray-400 transition ease-in-out duration-200`}
 					>
-						{Section.Contacto}
+						Contacto
 					</a>
 				</li>
 				<li class='py-4'>

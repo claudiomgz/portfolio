@@ -7,7 +7,7 @@ interface Props {
 	class: string;
 }
 
-export const Lottie = component$(({ class: className, path, idContainer }: Props) => {
+export default component$(({ class: className, path, idContainer }: Props) => {
 	useVisibleTask$(() => {
 		lottie.loadAnimation({
 			container: document.getElementById(`lottie-${idContainer}`)!,

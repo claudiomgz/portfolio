@@ -1,7 +1,7 @@
 import { type QRL, component$ } from '@builder.io/qwik';
+
 import HamburgerButton from '~/components/ui/hamburger-button';
 import ModeSwitch from '~/components/ui/mode-switch';
-import { Section } from '../header/header';
 
 interface Props {
 	showMenu: boolean;
@@ -38,58 +38,58 @@ export default component$(({ showMenu, changeShowMenu, isNameActive }: Props) =>
 				<ul class='flex flex-col justify-center items-center gap-6 font-medium text-black capitalize'>
 					<li class='text-step-0 py-4 hover:text-blue-500'>
 						<a
-							title={Section.Inicio}
-							href={`#${Section.Inicio}`}
+							title='Inicio'
+							href='#inicio'
 							onClick$={changeShowMenu}
 							class={`${
-								isNameActive === Section.Inicio
+								isNameActive === 'inicio'
 									? 'text-blue-500 dark:text-gray-400'
 									: 'text-black dark:text-white'
-							} hover:text-blue-500 dark:hover:text-gray-400`}
+							} hover:text-blue-500 dark:hover:text-gray-40 transition ease-in-out duration-300`}
 						>
-							{Section.Inicio}
+							Inicio
 						</a>
 					</li>
 					<li class='text-step-0 py-4'>
 						<a
-							title={Section.Conoceme}
-							href={`#${Section.Conoceme}`}
+							title='Sobre mi'
+							href='#sobre mi'
 							onClick$={changeShowMenu}
 							class={`${
-								isNameActive === Section.Conoceme
+								isNameActive === 'sobre mi'
 									? 'text-blue-500 dark:text-gray-400'
 									: 'text-black dark:text-white'
-							} hover:text-blue-500 dark:hover:text-gray-400`}
+							} hover:text-blue-500 dark:hover:text-gray-400 transition ease-in-out duration-300`}
 						>
-							{Section.Conoceme}
+							Sobre mi
 						</a>
 					</li>
 					<li class='text-step-0 py-4'>
 						<a
-							title={Section.Proyectos}
-							href={`#${Section.Proyectos}`}
+							title='Proyectos'
+							href='#proyectos'
 							onClick$={changeShowMenu}
 							class={`${
-								isNameActive === Section.Proyectos
+								isNameActive === 'proyectos'
 									? 'text-blue-500 dark:text-gray-400'
 									: 'text-black dark:text-white'
-							} hover:text-blue-500 dark:hover:text-gray-400`}
+							} hover:text-blue-500 dark:hover:text-gray-400 transition ease-in-out duration-300`}
 						>
-							{Section.Proyectos}
+							Proyectos
 						</a>
 					</li>
 					<li class='text-step-0 py-4'>
 						<a
-							title={Section.Contacto}
-							href={`#${Section.Contacto}`}
+							title='Contacto'
+							href='#contacto'
 							onClick$={changeShowMenu}
 							class={`${
-								isNameActive === Section.Contacto
+								isNameActive === 'contacto'
 									? 'text-blue-500 dark:text-gray-400'
 									: 'text-black dark:text-white'
-							} hover:text-blue-500 dark:hover:text-gray-400`}
+							} hover:text-blue-500 dark:hover:text-gray-400 transition ease-in-out duration-300`}
 						>
-							{Section.Contacto}
+							Contacto
 						</a>
 					</li>
 				</ul>

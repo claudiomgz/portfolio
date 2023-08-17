@@ -12,18 +12,6 @@ html {
 	scroll-behavior: smooth;
 }
 
-button,
-li,
-a,
-input,
-div {
-	transition: background-color 0.2s ease, color 0.2s ease, transform 0.2s ease;
-}
-
-img {
-	transition: transform 0.2s ease;
-}
-
 main {
 	overflow: hidden;
 }

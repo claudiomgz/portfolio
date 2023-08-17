@@ -1,5 +1,6 @@
 import { component$ } from '@builder.io/qwik';
-import CardProjects from './card/card-projects';
+
+import CardProjects from '~/components/card-projects';
 
 export default component$(() => {
 	return (
