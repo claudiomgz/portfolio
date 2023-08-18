@@ -14,8 +14,9 @@ export default component$(() => {
         bases de datos relacionales.
       </p>
       <p class="mb-4 text-gray-900 font-medium dark:text-gray-400">
-        Mi objetivo es crear productos que ofrezcan experiencias excepcionales,
-        con un diseño atractivo, intuitivo y de alta calidad.
+        Mis principales objetivos son formarme en el ámbito laboral y poner en
+        uso mis aprendizajes adquiridos, así como seguir aprendiendo en base a
+        las nuevas experiencias.
       </p>
       <p class="mb-4 text-gray-800 dark:text-white">
         Comprometido con el aprendizaje continuo y adaptación a las últimas

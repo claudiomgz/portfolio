@@ -43,7 +43,7 @@ export const abilities: {
 	{
 		name: 'React',
 		type: 'Frontend',
-		level: 'Avanzado',
+		level: 'Intermedio',
 		icon: 'react',
 	},
 	{
@@ -53,7 +53,7 @@ export const abilities: {
 		icon: '',
 	},
 	{
-		name: 'Laravel',
+		name: 'C#',
 		type: 'Backend',
 		level: 'Intermedio',
 		icon: 'laravel',
@@ -84,15 +84,15 @@ export const abilities: {
 		icon: '',
 	},
 	{
-		name: 'MongoDB',
+		name: 'SQL Server',
 		type: 'DataBase',
-		level: 'Intermedio',
+		level: 'Avanzado',
 		icon: '',
 	},
 	{
-		name: 'GraphQL',
+		name: 'PostgreSQL',
 		type: 'Backend',
-		level: 'Básico',
+		level: 'Avanzado',
 		icon: '',
 	},
 ];
@@ -130,7 +130,7 @@ export const projects = [
 		imageUrl: 'proyecto-1',
 		githubUrl: 'https://github.com/claudiomgz/anotador-de-truco',
 		websiteUrl: 'https://anotadordetruco.netlify.app/',
-		createdAt: '2021-11-12',
+		createdAt: '2021-05-01',
 		updatedAt: '2021-12-13',
 		byMe: true,
 	},
@@ -140,7 +140,7 @@ export const projects = [
 			'Sitio web estático con diseño responsive aplicando clases con bootstrap. Preprocesadores Less y Sass. NPM en la etapa de desarrollo con algunos módulos de node.js.',
 		technologies: ['React', 'JavaScript', 'TailwindCss', 'NodeJs', 'MongoDB'],
 		imageUrl: 'proyecto-2',
-		githubUrl: 'https://github.com/JuanDa14/treelink-frontend',
+		githubUrl: 'https://github.com/claudiomgz/hoteles-static-web',
 		websiteUrl: 'https://guiadehoteles.netlify.app/',
 		createdAt: '2020-10-12',
 		updatedAt: '2020-12-12',

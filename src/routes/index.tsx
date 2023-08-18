@@ -27,7 +27,7 @@ export default component$(() => {
 });
 
 export const head: DocumentHead = {
-	title: 'Claudio Monguzzi - Developer',
+	title: 'Claudio Monguzzi | Developer',
 	meta: [
 		{
 			name: 'author',
@@ -36,7 +36,7 @@ export const head: DocumentHead = {
 		{
 			name: 'description',
 			content:
-				'Me desempeño como desarrollador C# .NET/ SQL Server en la Mutual de Integrantes del Poder Judicial.',
+				'Desarrollador Fullstack.',
 		},
 		{
 			name: 'keywords',

@@ -16,11 +16,12 @@ export default component$(() => {
             Claudio Monguzzi
           </h1>
           <p class="text-step-2 font-bold capitalize font-code text-black dark:text-white">
-            Developer
+            Fullstack Developer
           </p>
           <p class="sm:mb-4 text-gray-500 dark:text-gray-400 text-step-0">
-            Me desempeño como desarrollador C# .NET/ SQL Server en la Mutual de
-            Integrantes del Poder Judicial.
+            Experiencia en C#, Node.js y SQL Server. Actualmente me desempeño
+            como desarrollador C# .NET/ SQL Server en la Mutual de Integrantes
+            del Poder Judicial.
           </p>
           <div class="flex justify-between items-center mt-4 md:mt-0">
             <SocialNetworks class="flex gap-2 items-center" />

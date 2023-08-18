@@ -1,4 +1,4 @@
-const staticPaths = new Set([]);
+const staticPaths = new Set(["/_headers","/docs/ClaudioMonguzzi.pdf","/favicon.svg","/fonts/poppins-400.woff2","/fonts/poppins-500.woff2","/fonts/poppins-700.woff2","/icons/bootstrap.svg","/icons/css.svg","/icons/download.svg","/icons/facebook-auth.svg","/icons/facebook.svg","/icons/github.svg","/icons/gmail.svg","/icons/google-auth.svg","/icons/graphql.svg","/icons/html.svg","/icons/instagram.svg","/icons/javascript.svg","/icons/laravel.svg","/icons/linkedin.svg","/icons/mongodb.svg","/icons/mysql.svg","/icons/nestjs.svg","/icons/nextjs.svg","/icons/nodejs.svg","/icons/php.svg","/icons/react.svg","/icons/send.svg","/icons/show.svg","/icons/tailwindcss.svg","/icons/typescript.svg","/icons/website.svg","/imgs/empty-image.svg","/lottie/about.json","/lottie/contact.json","/lottie/hero.json","/manifest.json","/q-manifest.json","/robots.txt","/service-worker.js"]);
 function isStaticPath(method, url) {
   if (method.toUpperCase() !== 'GET') {
     return false;
