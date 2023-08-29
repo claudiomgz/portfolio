@@ -6,7 +6,7 @@ export default component$(() => {
   return (
     <div class="md:flex-1">
       <h2 class="text-step-1 uppercase font-bold text-black dark:text-white mb-4 md:mb-2">
-        Skills
+        Tecnologías
       </h2>
       <CardAbilities type="Frontend" />
       {/* Backend */}
