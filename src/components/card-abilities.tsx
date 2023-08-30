@@ -21,7 +21,7 @@ export default component$(({ type }: Props) => {
                 <Image
                   width={40}
                   height={40}
-                  src={`/icons/${ability.name.toLowerCase()}.svg`}
+                  src={`/icons/${ability.icon.toLowerCase()}.svg`}
                   alt={ability.name}
                 />
                 <span class="text-gray-500 mb-3 dark:text-gray-400 capitalize">

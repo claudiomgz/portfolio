@@ -33,7 +33,7 @@ export default component$(() => {
               {/* <p class="mb-2 text-step--1 font-normal text-gray-500 dark:text-gray-400"> */}
                 <ul class="mb-2 text-step--1 font-normal text-gray-500 dark:text-gray-400">
                   {project.description.split("-").map((sentence, index) => (
-                    <li key={index -1 }>{sentence.trim()}</li>
+                    <li key={index}>{sentence.trim()}</li>
                   ))}
                 </ul>
               {/* </p> */}

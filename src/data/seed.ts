@@ -14,13 +14,13 @@ export const abilities: {
 		name: 'CSS',
 		type: 'Frontend',
 		level: 'Intermedio',
-		icon: 'css3-alt',
+		icon: 'css',
 	},
 	{
 		name: 'JavaScript',
 		type: 'Frontend',
 		level: 'Avanzado',
-		icon: 'js',
+		icon: 'javascript',
 	},
 	{
 		name: 'Bootstrap',
@@ -50,7 +50,7 @@ export const abilities: {
 		name: 'C#',
 		type: 'Backend',
 		level: 'Intermedio',
-		icon: 'c#',
+		icon: 'csharp',
 	},
 	{
 		name: '.NET',
@@ -62,7 +62,7 @@ export const abilities: {
 		name: 'Node.js',
 		type: 'Backend',
 		level: 'Avanzado',
-		icon: 'node.js',
+		icon: 'nodejs',
 	},
 	{
 		name: 'C++',
@@ -94,8 +94,8 @@ export const projects = [
 	{
 		title: 'Desarrollador C# .NET / SQL Server',
 		description:
-			'Aplicaciones de escritorio en C# con MVC, Windows Forms, LinQ, SQL Server y Crystal Reports. Migración de viejos sistemas en VB6 a C#. Introducción a aplicaciones moviles con React Native. Administración de servidores.',
-		technologies: ['C#', 'SQL Server', 'Html', 'Css', 'JavaScript', 'Bootstrap'],
+			'Aplicaciones de escritorio en C# con MVC, Windows Forms, LinQ, SQL Server y Crystal Reports. -Migración de viejos sistemas en VB6 a C#. -Introducción a aplicaciones moviles con React Native. -Administración de servidores.',
+		technologies: ['Csharp', 'SQLServer', 'Html5', 'Css', 'JavaScript', 'Bootstrap'],
 		imageUrl: 'proyecto-2',
 		githubUrl: '#',
 		websiteUrl: 'http://www.mipj.org.ar/',
@@ -107,7 +107,7 @@ export const projects = [
 		title: 'Catálogo de productos',
 		description:
 			'El usuario puede navegar, elegir y ver detalles de cada producto para luego ponerse en contacto con el vendedor para obtener mas información y efectuar la compra. Además, el sistema cuenta con acceso al administrador de los productos que se muestran.',
-		technologies: ['Node.js', 'JavaScript', 'Handlebars'],
+		technologies: ['Nodejs', 'JavaScript', 'Handlebars', 'postgresql'],
 		imageUrl: 'proyecto-2',
 		githubUrl: 'https://github.com/claudiomgz/catalogo-de-productos',
 		websiteUrl: 'https://catalogoapp.onrender.com/',
@@ -128,10 +128,10 @@ export const projects = [
 		byMe: true,
 	},
 	{
-		title: 'Guia de Hoteles',
+		title: 'Guía de Hoteles',
 		description:
 			'Sitio web estático con diseño responsive aplicando clases con bootstrap. Preprocesadores Less y Sass. NPM en la etapa de desarrollo con algunos módulos de node.js.',
-		technologies: ['React', 'JavaScript', 'TailwindCss', 'NodeJs', 'MongoDB'],
+		technologies: ['html5', 'css', 'JavaScript', 'bootstrap', 'NodeJs'],
 		imageUrl: 'proyecto-2',
 		githubUrl: 'https://github.com/claudiomgz/hoteles-static-web',
 		websiteUrl: 'https://guiadehoteles.netlify.app/',
