@@ -56,7 +56,7 @@ export const abilities: {
 		name: '.NET',
 		type: 'Backend',
 		level: 'Intermedio',
-		icon: '.net',
+		icon: 'net',
 	},
 	{
 		name: 'Node.js',
@@ -95,7 +95,7 @@ export const projects = [
 		title: 'Desarrollador C# .NET / SQL Server',
 		description:
 			'Aplicaciones de escritorio en C# con MVC, Windows Forms, LinQ, SQL Server y Crystal Reports. -Migración de viejos sistemas en VB6 a C#. -Introducción a aplicaciones moviles con React Native. -Administración de servidores.',
-		technologies: ['Csharp', 'SQLServer', 'Html5', 'Css', 'JavaScript', 'Bootstrap'],
+		technologies: ['Csharp', 'net', 'SQLServer', 'react'],
 		imageUrl: 'proyecto-2',
 		githubUrl: '#',
 		websiteUrl: 'http://www.mipj.org.ar/',
@@ -107,7 +107,7 @@ export const projects = [
 		title: 'Catálogo de productos',
 		description:
 			'El usuario puede navegar, elegir y ver detalles de cada producto para luego ponerse en contacto con el vendedor para obtener mas información y efectuar la compra. Además, el sistema cuenta con acceso al administrador de los productos que se muestran.',
-		technologies: ['Nodejs', 'JavaScript', 'Handlebars', 'postgresql'],
+		technologies: ['Handlebars', 'JavaScript', 'Nodejs', 'postgresql'],
 		imageUrl: 'proyecto-2',
 		githubUrl: 'https://github.com/claudiomgz/catalogo-de-productos',
 		websiteUrl: 'https://catalogoapp.onrender.com/',
@@ -119,7 +119,7 @@ export const projects = [
 		title: 'Anotador de truco web',
 		description:
 			'Responsive y desarrllado en simple JavaScript Vanilla. Utilización de Bootstrap para el diseño, NPM en la etapa de desarrollo. Permite llevar la cuenta de una partida de truco argentino entre dos equipos.',
-		technologies: ['JavaScript', 'Bootstrap', 'NodeJs'],
+		technologies: ['html5', 'css', 'JavaScript', 'Bootstrap', 'NodeJs'],
 		imageUrl: 'proyecto-1',
 		githubUrl: 'https://github.com/claudiomgz/anotador-de-truco',
 		websiteUrl: 'https://anotadordetruco.netlify.app/',

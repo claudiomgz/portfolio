@@ -11,7 +11,7 @@ export default component$(() => {
         <div class="md:flex md:gap-10">
           <div class="hidden flex-1 md:flex md:flex-col">
             <h2 class="text-step-1 uppercase mb-2 text-black dark:text-white font-bold">
-              Contacto
+              Contáctame
             </h2>
             <p class="text-black dark:text-white mb-2">
               Puedes contactarme a través de este formulario o enviarme un
@@ -39,7 +39,7 @@ export default component$(() => {
           </div>
           <div class="flex-1">
             <h2 class="flex-initial md:hidden text-step-1 uppercase mb-2 text-black dark:text-white font-bold">
-              Contacto
+              Contáctame
             </h2>
             <p class="text-black dark:text-white mb-2 md:hidden">
               Puedes contactarme a través de este formulario o enviarme un
