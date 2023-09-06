@@ -19,11 +19,11 @@ export default component$(() => {
             Fullstack Developer
           </p>
           <p class="sm:mb-4 text-gray-500 dark:text-gray-400 text-step-0">
-            Desarrollador radicado en Santa Fe, Argentina. Apasionado por las nuevas tecnologíasI
-            am a passionate, course-trained and self-taught React developer. My
-            perfectionist approach drives me to optimize and get things done
-            right and fast. Always excited to learn and face new challenges in
-            technology.
+            Desarrollador C# .NET | Node.js | SQL Server. Radicado en Santa Fe,
+            Argentina. Soy un desarrollador apasionado, formado por cursos y
+            autodidacta. Mi enfoque perfeccionista me impulsa a optimizar y
+            hacer las cosas bien y rápido. Siempre entusiasmado por aprender y
+            enfrentar nuevos desafíos en tecnología.
           </p>
           <div class="flex justify-between items-center mt-4 md:mt-0">
             <SocialNetworks class="flex gap-2 items-center" />
