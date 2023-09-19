@@ -8,7 +8,7 @@ export default component$(() => {
         Sobre mí
       </h2>
       <p class="mb-4 text-gray-800 dark:text-white">
-        Actualmente me desempeño como desarrollador C# .NET/ SQL Server en la
+        Actualmente me desempeño como desarrollador C# .NET / SQL Server en la
         Mutual de Integrantes del Poder Judicial. Experiencia en C#, Node.js y
         SQL Server, con enfoque en la programación orientada a objetos, patrones
         de diseño y la optimización de consultas. Capaz de crear servicios web,

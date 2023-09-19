@@ -19,11 +19,11 @@ export default component$(() => {
             Fullstack Developer
           </p>
           <p class="sm:mb-4 text-gray-500 dark:text-gray-400 text-step-0">
-            Desarrollador C# .NET | Node.js | SQL Server. Radicado en Santa Fe,
-            Argentina. Soy un desarrollador apasionado, formado por cursos y
-            autodidacta. Mi enfoque perfeccionista me impulsa a optimizar y
-            hacer las cosas bien y rápido. Siempre entusiasmado por aprender y
+            Desarrollador radicado en la ciudad de Santa Fe. Formado por cursos de
+            forma autodidacta. Mi enfoque perfeccionista me impulsa a optimizar
+            y hacer las cosas bien y rápido. Siempre entusiasmado por aprender y
             enfrentar nuevos desafíos en tecnología.
+            "Actualmente, me encuentro trabajando en la Mutual de Integrantes del Poder Judicial, donde he tenido la oportunidad de adquirir valiosa experiencia en desarrollo de sistemas empresariales en C#, .NET, Windows Forms, SQL Server y Crystal Reports. Siempre estoy buscando crecimiento profesional y nuevos desafíos que me permitan aplicar y expandir mis habilidades. Estoy emocionado por la posibilidad de explorar oportunidades que me permitan contribuir de manera significativa y seguir desarrollándome en mi carrera."
           </p>
           <div class="flex justify-between items-center mt-4 md:mt-0">
             <SocialNetworks class="flex gap-2 items-center" />
