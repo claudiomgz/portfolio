@@ -16,14 +16,12 @@ export default component$(() => {
             Claudio Monguzzi
           </h1>
           <p class="text-step-2 font-bold capitalize font-code text-black dark:text-white">
-            Fullstack Developer
+            Desarrollador Fullstack
           </p>
           <p class="sm:mb-4 text-gray-500 dark:text-gray-400 text-step-0">
-            Desarrollador radicado en la ciudad de Santa Fe. Formado por cursos de
-            forma autodidacta. Mi enfoque perfeccionista me impulsa a optimizar
-            y hacer las cosas bien y rápido. Siempre entusiasmado por aprender y
-            enfrentar nuevos desafíos en tecnología.
-            "Actualmente, me encuentro trabajando en la Mutual de Integrantes del Poder Judicial, donde he tenido la oportunidad de adquirir valiosa experiencia en desarrollo de sistemas empresariales en C#, .NET, Windows Forms, SQL Server y Crystal Reports. Siempre estoy buscando crecimiento profesional y nuevos desafíos que me permitan aplicar y expandir mis habilidades. Estoy emocionado por la posibilidad de explorar oportunidades que me permitan contribuir de manera significativa y seguir desarrollándome en mi carrera."
+            Experiencia en C# .NET, Node.js y SQL Server, con
+            enfoque en la programación orientada a objetos, patrones de diseño y
+            la optimización de consultas.
           </p>
           <div class="flex justify-between items-center mt-4 md:mt-0">
             <SocialNetworks class="flex gap-2 items-center" />
