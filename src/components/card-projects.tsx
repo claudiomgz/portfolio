@@ -18,7 +18,7 @@ export default component$(() => {
           <li key={index}>
             <div class="border bg-white dark:bg-dark-body dark:border-gray-600 relative flex items-center justify-between rounded-lg overflow-hidden hover:shadow transition-shadow ease-in-out duration-200">
               <div class="p-4">
-                <h2 class="capitalize font-semibold text-black dark:text-white">
+                <h2 class="uppercase font-semibold text-black dark:text-white">
                   {project.title}
                 </h2>
                 <p class="text-gray-500 text-step--1 my-1 dark:text-white">
@@ -30,7 +30,7 @@ export default component$(() => {
                       : formatDate(project.updatedAt)}
                   </time>
                 </p>
-                <p class="text-gray-500 line-clamp-3 text-sm dark:text-gray-400">
+                <p class="text-gray-500 line-clamp-5 text-sm dark:text-gray-400">
                   {project.description}
                 </p>
                 <div class="flex justify-between items-center mt-4 gap-5">
