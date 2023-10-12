@@ -72,7 +72,7 @@ export const head: DocumentHead = {
     {
       name: "keywords",
       content:
-        "Claudio Monguzzi Desarrollador, Claudio Developer, Monguzzi, Claudio, Backend, Fullstack Developer",
+        "Claudio Monguzzi, desarrollador santa fe, Claudio Monguzzi Desarrollador, Claudio Developer, Monguzzi, Claudio, Backend, Fullstack Developer",
     },
     {
       name: "og:title",
