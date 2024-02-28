@@ -12,7 +12,7 @@ import Project from "~/components/project";
 
 export const useSendEmail = routeAction$(async (data) => {
   // This is the Sendgrid API 
-  sgMail.setApiKey('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')
+  sgMail.setApiKey(process.env.SENDGRID_API_KEY)
 
   // In `to` and `from` we will have to put the email address
   // that we have verified in Sendgrid
