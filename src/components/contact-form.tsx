@@ -22,34 +22,37 @@ export default component$(() => {
     >
       {/* // Name  */}
       <div class="flex flex-col gap-2">
-        <label for="name">Su nombre</label>
+        <label for="name"></label>
         <input
           required
           class="border border-black rounded-md px-4 py-2"
           name="name"
           type="text"
+          placeholder="Ingrese su nombre"
         />
       </div>
 
       {/* // Email  */}
       <div class="flex flex-col gap-2">
-        <label for="email">Su dirección de correo</label>
+        <label for="email"></label>
         <input
           required
           class="border border-black rounded-md px-4 py-2"
           name="email"
           type="email"
+          placeholder="Ingrese su email"
         />
       </div>
 
       {/* // Message  */}
       <div class="flex flex-col gap-2">
-        <label for="message">Mensaje</label>
+        <label for="message"></label>
         <textarea
           required
           rows={4}
           class="border border-black rounded-md px-4 py-2"
           name="message"
+          placeholder="Ingrese su mensaje"
         />
       </div>
 

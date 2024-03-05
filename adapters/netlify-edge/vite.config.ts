@@ -8,7 +8,7 @@ export default extendConfig(baseConfig, () => {
       ssr: true,
       rollupOptions: {
         input: ["src/entry.netlify-edge.tsx", "@qwik-city-plan"],
-        external: ['fs', 'path'], // Externalizar explícitamente el módulo "fs" y "path"
+        external: [ 'fs', 'path' ], // Externalizar explícitamente los modulos
       },
       outDir: ".netlify/edge-functions/entry.netlify-edge",
     },
