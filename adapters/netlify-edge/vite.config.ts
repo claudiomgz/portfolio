@@ -5,9 +5,10 @@ import baseConfig from "../../vite.config";
 export default extendConfig(baseConfig, () => {
   return {
     build: {
-      ssr: false,
+      ssr: true,
       rollupOptions: {
-        input: ["src/entry.netlify-edge.tsx", "@qwik-city-plan", "src/entry.ssr.tsx"],
+        input: ["src/entry.netlify-edge.tsx", "@qwik-city-plan"],
+        external: ['fs', 'path'], // Externalizar explícitamente el módulo "fs" y "path"
       },
       outDir: ".netlify/edge-functions/entry.netlify-edge",
     },
