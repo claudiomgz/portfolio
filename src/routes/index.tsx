@@ -1,43 +1,43 @@
 import { component$ } from "@builder.io/qwik";
-import { routeAction$, type DocumentHead } from "@builder.io/qwik-city";
+import { /*routeAction$,*/ type DocumentHead } from "@builder.io/qwik-city";
 import { routeLoader$ } from "@builder.io/qwik-city";
 import { type InitialValues } from "@modular-forms/qwik";
 import { type ContactForm } from "~/models/contact-form-schema";
-import sgMail from '@sendgrid/mail'
+//import sgMail from '@sendgrid/mail'
 
 import About from "~/components/about";
 import Contact from "~/components/contact";
 import Hero from "~/components/hero";
 import Project from "~/components/project";
 
-export const useSendEmail = routeAction$(async (data) => {
-  // This is the Sendgrid API 
-  sgMail.setApiKey(import.meta.env.SENDGRID_API_KEY)
+// export const useSendEmail = routeAction$(async (data) => {
+//   // This is the Sendgrid API 
+//   sgMail.setApiKey(import.meta.env.SENDGRID_API_KEY)
 
-  // In `to` and `from` we will have to put the email address
-  // that we have verified in Sendgrid
-  const msg = {
-    to: 'claudiomonguzzi80@gmail.com',
-    from: 'claudiomonguzzi80@gmail.com',
-    subject: 'Mensaje desde la página web',
-    text: data.message,
-    html: `Nuevo mensaje de: ${data.name} (${data.email}):<br/><br/>${data.message}`,
-  }
+//   // In `to` and `from` we will have to put the email address
+//   // that we have verified in Sendgrid
+//   const msg = {
+//     to: 'claudiomonguzzi80@gmail.com',
+//     from: 'claudiomonguzzi80@gmail.com',
+//     subject: 'Mensaje desde la página web',
+//     text: data.message,
+//     html: `Nuevo mensaje de: ${data.name} (${data.email}):<br/><br/>${data.message}`,
+//   }
 
-  //@ts-ignore
-  await sgMail.send(msg).then(
-    () => {
-      console.log('Message sent')
-    },
-    (error) => {
-      console.error(error)
+//   //@ts-ignore
+//   await sgMail.send(msg).then(
+//     () => {
+//       console.log('Message sent')
+//     },
+//     (error) => {
+//       console.error(error)
 
-      if (error.response) {
-        console.error(error.response.body)
-      }
-    }
-  )
-})
+//       if (error.response) {
+//         console.error(error.response.body)
+//       }
+//     }
+//   )
+// })
 
 export const useContactFormLoader = routeLoader$<InitialValues<ContactForm>>(
   () => ({

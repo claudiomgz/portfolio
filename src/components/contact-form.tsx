@@ -1,10 +1,10 @@
 import { $, component$, useContext  } from "@builder.io/qwik";
 import { Form } from "@builder.io/qwik-city";
-import { useSendEmail } from "~/routes/index";
+//import { useSendEmail } from "~/routes/index";
 import { UIContext } from "~/context/ui/ui-context";
 
 export default component$(() => {
-  const sendEmailAction = useSendEmail();
+  //const sendEmailAction = useSendEmail();
   const { showAlert } = useContext(UIContext);
 
   const resetForm = $(async (form: HTMLFormElement) => {
@@ -14,7 +14,7 @@ export default component$(() => {
 
   return (
     <Form
-      action={sendEmailAction}
+      //action={sendEmailAction}
       class="flex flex-col gap-4 w-full max-w-[400px]"
       onSubmitCompleted$={(event) => {
         resetForm(event.target as HTMLFormElement);
