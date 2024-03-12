@@ -19,7 +19,7 @@ export default component$(
 			<div class='mb-4'>
 				<textarea
 					{...props}
-					autoComplete='off'
+					autocomplete='off'
 					rows={5}
 					value={value}
 					placeholder={placeholder}
