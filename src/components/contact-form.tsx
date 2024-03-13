@@ -14,6 +14,7 @@ export default component$(() => {
 
   return (
     <Form
+      slot="netlify"
       //action={sendEmailAction}
       class="flex flex-col gap-4 w-full max-w-[400px]"
       onSubmitCompleted$={(event) => {
@@ -66,7 +67,7 @@ export default component$(() => {
   );
 });
 
-//VIEJO FORMULARIO
+//FORMULARIO INICIAL SIN SENDGRID
 //---------------------------------------------------------------------------------//
 // import { $, type QRL, component$, useContext } from "@builder.io/qwik";
 // import type { SubmitHandler } from "@modular-forms/qwik";
