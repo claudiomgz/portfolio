@@ -14,7 +14,8 @@ export default component$(() => {
 
   return (
     <Form
-      slot="netlify"
+      //@ts-ignore
+      netlify
       //action={sendEmailAction}
       class="flex flex-col gap-4 w-full max-w-[400px]"
       onSubmitCompleted$={(event) => {

@@ -9,7 +9,7 @@
 		"strict": true,
 		"forceConsistentCasingInFileNames": true,
 		"resolveJsonModule": true,
-		"moduleResolution": "Node",
+		"moduleResolution": "Node10",
 		"esModuleInterop": true,
 		"skipLibCheck": true,
 		"incremental": true,
