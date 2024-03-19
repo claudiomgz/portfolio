@@ -1,5 +1,5 @@
-import { $, component$, useContext  } from "@builder.io/qwik";
-import { Form } from "@builder.io/qwik-city";
+import { $, component$, useContext } from "@builder.io/qwik";
+//import { Form } from "@builder.io/qwik-city";
 //import { useSendEmail } from "~/routes/index";
 import { UIContext } from "~/context/ui/ui-context";
 
@@ -13,10 +13,10 @@ export default component$(() => {
   });
 
   return (
-    <Form
-      //@ts-ignore
-      netlify
-      //action={sendEmailAction}
+    <form
+      name="contact"
+      method="POST"
+      data-netlify="true"
       class="flex flex-col gap-4 w-full max-w-[400px]"
       onSubmitCompleted$={(event) => {
         resetForm(event.target as HTMLFormElement);
@@ -64,7 +64,60 @@ export default component$(() => {
       >
         Enviar
       </button>
-    </Form>
+    </form>
+
+    /********************************************************/
+    // <Form
+    //   //action={sendEmailAction}
+    //   class="flex flex-col gap-4 w-full max-w-[400px]"
+    //   onSubmitCompleted$={(event) => {
+    //     resetForm(event.target as HTMLFormElement);
+    //   }}
+    // >
+    //   {/* // Name  */}
+    //   <div class="flex flex-col gap-2">
+    //     <label for="name"></label>
+    //     <input
+    //       required
+    //       class="border border-black rounded-md px-4 py-2"
+    //       name="name"
+    //       type="text"
+    //       placeholder="Ingrese su nombre"
+    //     />
+    //   </div>
+
+    //   {/* // Email  */}
+    //   <div class="flex flex-col gap-2">
+    //     <label for="email"></label>
+    //     <input
+    //       required
+    //       class="border border-black rounded-md px-4 py-2"
+    //       name="email"
+    //       type="email"
+    //       placeholder="Ingrese su email"
+    //     />
+    //   </div>
+
+    //   {/* // Message  */}
+    //   <div class="flex flex-col gap-2">
+    //     <label for="message"></label>
+    //     <textarea
+    //       required
+    //       rows={4}
+    //       class="border border-black rounded-md px-4 py-2"
+    //       name="message"
+    //       placeholder="Ingrese su mensaje"
+    //     />
+    //   </div>
+
+    //   <button
+    //     class="w-full font-semibold py-2 rounded-md border bg-black text-white hover:shadow-xl dark:bg-blue-600 dark:border-none dark:hover:bg-blue-700 dark:hover:text-white disabled:opacity-50 transition ease-in-out duration-200"
+    //     type="submit"
+    //   >
+    //     Enviar
+    //   </button>
+    // </Form>
+    /********************************************************/
   );
 });
 
