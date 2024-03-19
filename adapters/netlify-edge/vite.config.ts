@@ -12,6 +12,6 @@ export default extendConfig(baseConfig, () => {
       },
       outDir: ".netlify/edge-functions/entry.netlify-edge",
     },
-    plugins: [netlifyEdgeAdapter({ excludedPath: "/" })],
+    plugins: [netlifyEdgeAdapter({ excludedPath: "/contact" })],
   };
 });
