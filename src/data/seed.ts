@@ -68,7 +68,7 @@ export const abilities: {
     name: "C++",
     type: "Backend",
     level: "Intermedio",
-    icon: "c++",
+    icon: "c",
   },
   {
     name: "SQL Server",

@@ -1,4 +1,5 @@
 import { $, component$, useContext } from "@builder.io/qwik";
+import { URLSearchParams } from "url";
 //import { Form } from "@builder.io/qwik-city";
 //import { useSendEmail } from "~/routes/index";
 import { UIContext } from "~/context/ui/ui-context";
@@ -17,11 +18,27 @@ export default component$(() => {
       name="contact"
       method="POST"
       data-netlify="true"
-      class="flex flex-col gap-4 w-full max-w-[400px]"
+      class="flex flex-col gap-4 w-full max-w-[400px"
+      onSubmit$={(e) => {
+        e.preventDefault();
+
+        const myForm = e.target;
+        //@ts-ignore
+        const formData = new FormData(myForm);
+        
+        fetch("/", {
+          method: "POST",
+          headers: { "Content-Type": "application/x-www-form-urlencoded" },
+          body: new URLSearchParams(formData.toString()),
+        })
+          .then(() => console.log("Form successfully submitted"))
+          .catch((error) => alert(error));
+      }}
       onSubmitCompleted$={(event) => {
         resetForm(event.target as HTMLFormElement);
       }}
     >
+      <input type="hidden" name="form-name" value="contact" />
       {/* // Name  */}
       <div class="flex flex-col gap-2">
         <label for="name"></label>
