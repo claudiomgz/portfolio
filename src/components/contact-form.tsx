@@ -18,18 +18,6 @@ export default component$(() => {
       method="POST"
       data-netlify="true"
       class="flex flex-col gap-4 w-full max-w-[400px]"
-      onSubmit$={(event: any) => {
-        event.preventDefault();
-
-        const myForm = event.target;
-        const formData = new FormData(myForm);
-
-        fetch("/", {
-          method: "POST",
-          headers: { "Content-Type": "application/x-www-form-urlencoded" },
-          body: new URLSearchParams(formData.toString()),
-        }).catch((error) => alert(error));
-      }}
       onSubmitCompleted$={(event) => {
         resetForm(event.target as HTMLFormElement);
       }}
