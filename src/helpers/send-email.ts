@@ -1,6 +1,6 @@
 export const sendEmail = async <T>(values: T) => {
 	try {
-		const resp = await fetch("http://127.0.0.1:3000/contact", {
+		const resp = await fetch("https://sendemail-back.onrender.com/contact", {
 			body: JSON.stringify(values),
 			method: 'POST',
 			headers: {
