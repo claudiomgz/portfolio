@@ -18,7 +18,13 @@ export default component$(() => {
 
   const handleSubmit: QRL<SubmitHandler<ContactForm>> = $(
     async (values: ContactForm) => {
-      await sendEmail(values);
+      const {
+        email: from,
+        name: subject,
+        message: text,
+      } = values;
+      const valores = { from, subject, text }; 
+      await sendEmail(valores);
       reset(contactForm);
       showAlert.value = true;
     }
