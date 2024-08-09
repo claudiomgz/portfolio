@@ -19,14 +19,15 @@ export default component$(() => {
             Desarrollador Fullstack
           </p>
           <p class="sm:mb-4 text-gray-500 dark:text-gray-400 text-step-0">
-            Experiencia en C# .NET, Node.js y bases de datos SQL, con
-            enfoque en la programación orientada a objetos, patrones de diseño y
-            la optimización de consultas.
+            Experiencia en C# .NET, Node.js y bases de datos SQL, con enfoque en
+            la programación orientada a objetos, patrones de diseño y la
+            optimización de consultas.
           </p>
           <div class="flex justify-between items-center mt-4 md:mt-0">
             <SocialNetworks class="flex gap-2 items-center" />
-            <a
-              href="/docs/ClaudioMonguzzi.pdf"
+            {/* <a
+              // href="/docs/ClaudioMonguzzi.pdf"
+              href="#"
               title="Descargar CV"
               download={true}
               target="_blank"
@@ -47,7 +48,7 @@ export default component$(() => {
                   d="M3 16.5v2.25A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75V16.5M16.5 12L12 16.5m0 0L7.5 12m4.5 4.5V3"
                 />
               </svg>
-            </a>
+            </a> */}
           </div>
         </div>
         <Lottie
