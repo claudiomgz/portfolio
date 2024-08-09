@@ -1,7 +1,7 @@
 import { component$ } from "@builder.io/qwik";
 
-import { currentDate, projects } from "~/data/seed";
-import { formatDate } from "~/helpers/format-date";
+import { /* currentDate,*/ projects } from "~/data/seed";
+// import { formatDate } from "~/helpers/format-date";
 import Image from "~/components/image";
 
 export default component$(() => {
