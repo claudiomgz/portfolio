@@ -21,7 +21,7 @@ export default component$(() => {
                 <h2 class="uppercase font-semibold text-black dark:text-white">
                   {project.title}
                 </h2>
-                <p class="text-gray-500 text-step--1 my-1 dark:text-white">
+                {/* <p class="text-gray-500 text-step--1 my-1 dark:text-white">
                   <time>{formatDate(project.createdAt)}</time>
                   <span> - </span>
                   <time>
@@ -29,7 +29,7 @@ export default component$(() => {
                       ? "Actualmente"
                       : formatDate(project.updatedAt)}
                   </time>
-                </p>
+                </p> */}
                 <p class="text-gray-500 line-clamp-5 text-sm dark:text-gray-400">
                   {project.description}
                 </p>

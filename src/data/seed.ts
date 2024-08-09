@@ -35,6 +35,12 @@ export const abilities: {
     icon: "react",
   },
   {
+    name: "Angular",
+    type: "Frontend",
+    level: "Intermedio",
+    icon: "angular",
+  },
+  {
     name: "Handlebars",
     type: "Frontend",
     level: "Intermedio",
@@ -92,21 +98,33 @@ export const abilities: {
 
 export const projects = [
   {
-    title: "Desarrollador C# .NET / SQL Server",
+    title: "Desarrollador C# .NET / SQL Server en MIPJ.",
     description:
-      "Aplicaciones de escritorio en C# con MVC, Windows Forms, LinQ, SQL Server y Crystal Reports. -Servicios Web SOAP con ASP.NET. -Migración de viejos sistemas en VB6 a C#. -Introducción a aplicaciones moviles con React Native.",
+      "Aplicaciones de escritorio en C# con MVC, Windows Forms, LinQ, SQL Server y Crystal Reports. -Migración de viejos sistemas en VB6 a C#. -Introducción a aplicaciones moviles con React Native.",
     technologies: ["Csharp", "net", "SQLServer", "react"],
     imageUrl: "proyecto-2",
     githubUrl: "#",
     websiteUrl: "http://www.mipj.org.ar/",
-    updatedAt: `${new Date().getFullYear()}-${
-      new Date().getMonth() + 1
-    }-${new Date().getDate()}`,
-    createdAt: `2021-11-02`,
+    updatedAt: `2024-05-05`,
+    createdAt: `2021-11-01`,
     byMe: false,
   },
   {
-    title: "Catálogo de productos",
+    title: "Analista Desarrollador en Musimundo!",
+    description:
+      "Desarrollo y mantenimiento de sistemas de administración empresarial con ASP.NET Web API y frontend con Angular.",
+    technologies: ["Csharp", "net", "SQLServer", "angular"],
+    imageUrl: "proyecto-2",
+    githubUrl: "#",
+    websiteUrl: "http://www.musimundo.com/",
+    updatedAt: `${new Date().getFullYear()}-${
+      new Date().getMonth() + 1
+    }-${new Date().getDate()}`,
+    createdAt: `2024-05-06`,
+    byMe: false,
+  },
+  {
+    title: "Catálogo de productos.",
     description:
       "El usuario puede navegar, elegir y ver detalles de cada producto para luego ponerse en contacto con el vendedor. El sistema cuenta con acceso al administrador de los productos.",
     technologies: ["Handlebars", "JavaScript", "Nodejs", "postgresql"],
@@ -118,7 +136,7 @@ export const projects = [
     byMe: true,
   },
   {
-    title: "Anotador de truco web",
+    title: "Anotador de truco web.",
     description:
       "Desarrollado en simple JS Vanilla, Bootstrap para el diseño, NPM en la etapa de desarrollo. Permite llevar la cuenta de una partida de truco argentino entre dos equipos.",
     technologies: ["html5", "css", "JavaScript", "Bootstrap", "NodeJs"],
@@ -130,15 +148,15 @@ export const projects = [
     byMe: true,
   },
   {
-    title: "Guía de Hoteles",
+    title: "Sistema de Liquidación de Sueldos.",
     description:
-      "Sitio web estático con diseño responsive, aplicando clases con Bootstrap. Preprocesadores Less y Sass. NPM en la etapa de desarrollo, con algunos módulos de Node.js.",
-    technologies: ["html5", "css", "JavaScript", "bootstrap", "NodeJs"],
+      "Aplicacion de escritorio desarrollada en .NET Framework con Windows Forms, LinQ, Sql Server y Crystal Reports para informes.",
+    technologies: ["Csharp", "net", "SQLServer"],
     imageUrl: "proyecto-2",
-    githubUrl: "https://github.com/claudiomgz/hoteles-static-web",
-    websiteUrl: "https://guiadehoteles.netlify.app/",
-    createdAt: "2020-10-12",
-    updatedAt: "2020-12-12",
+    // githubUrl: "#",
+    // websiteUrl: "#",
+    createdAt: "2022-03-12",
+    updatedAt: "2022-12-12",
     byMe: true,
   },
 ];

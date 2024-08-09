@@ -19,7 +19,7 @@ export default component$(() => {
             Desarrollador Fullstack
           </p>
           <p class="sm:mb-4 text-gray-500 dark:text-gray-400 text-step-0">
-            Experiencia en C# .NET, Node.js y SQL Server, con
+            Experiencia en C# .NET, Node.js y bases de datos SQL, con
             enfoque en la programación orientada a objetos, patrones de diseño y
             la optimización de consultas.
           </p>
