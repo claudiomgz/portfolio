@@ -59,7 +59,7 @@ export default component$(() => {
 });
 
 export const head: DocumentHead = {
-  title: "Claudio Monguzzi | Developer",
+  title: "Claudio Monguzzi | Desarrollador Fullstack",
   meta: [
     {
       name: "author",
@@ -72,16 +72,16 @@ export const head: DocumentHead = {
     {
       name: "keywords",
       content:
-        "Claudio Monguzzi, desarrollador santa fe, Claudio Monguzzi Desarrollador, Claudio Developer, Monguzzi, Claudio, Backend, Fullstack Developer",
+        "Claudio Monguzzi, desarrollador santa fe, Claudio Monguzzi Desarrollador, Claudio Developer, Monguzzi, Claudio, Backend, Fullstack Developer, Desarrollador Fullstack, C#, .NET, Node.js, SQL Server, JavaScript, TypeScript, HTML, CSS, Bootstrap, Tailwind, APIs REST, Servicios Web, Programación Orientada a Objetos, Patrones de Diseño, Optimización de Consultas, Bases de Datos Relacionales, Aprendizaje Continuo",
     },
     {
       name: "og:title",
-      content: "Claudio Monguzzi | Developer",
+      content: "Claudio Monguzzi | Desarrollador Fullstack",
     },
     {
       name: "og:description",
       content:
-        "Desarrollador con experiencia en C#, Node.js y SQL Server, con enfoque en la programación orientada a objetos, patrones de diseño y la optimización de consultas. Capaz de crear servicios web, aplicaciones de escritorio y gestionar bases de datos relacionales. Comprometido con el aprendizaje continuo y adaptación a las últimas tecnologías.",
+        "Desarrollador con experiencia en C# .NET, Node.js y SQL Server, con enfoque en la programación orientada a objetos, patrones de diseño y la optimización de consultas. Capaz de crear servicios web, aplicaciones de escritorio y gestionar bases de datos relacionales. Comprometido con el aprendizaje continuo y adaptación a las últimas tecnologías.",
     },
     {
       name: "og:image",

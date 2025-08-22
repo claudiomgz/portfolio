@@ -17,7 +17,7 @@ export default component$(() => {
         continua.
       </p>
       <p class="mb-4 text-gray-900 font-medium dark:text-gray-400">
-        Actualmente me desempeño como Analista Desarrollador en Musimundo!
+        Actualmente me desempeño como Analista Desarrollador en Conmega ACE.
       </p>
       <p class="mb-4 text-gray-800 dark:text-white">
         Desarrollo de sistemas empresariales en .NET con Windows Forms, ASP.NET

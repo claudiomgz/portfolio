@@ -1,15 +1,23 @@
-import { $, type QRL, component$, useContext } from "@builder.io/qwik";
+import {
+  $,
+  type QRL,
+  component$,
+  //useContext,
+  useSignal,
+} from "@builder.io/qwik";
 import type { SubmitHandler } from "@modular-forms/qwik";
 import { reset, useForm, zodForm$ } from "@modular-forms/qwik";
 
 import { useContactFormLoader } from "~/routes";
-import { UIContext } from "~/context/ui/ui-context";
+//import { UIContext } from "~/context/ui/ui-context";
 import { type ContactForm, contactSchema } from "~/models/contact-form-schema";
 import { sendEmail } from "~/helpers/send-email";
 import InputForm from "~/components/input-form";
 
 export default component$(() => {
-  const { showAlert } = useContext(UIContext);
+  //const { showAlert } = useContext(UIContext);
+  const loading = useSignal(false);
+  const showAlert = useSignal(false);
 
   const [contactForm, { Form, Field }] = useForm<ContactForm>({
     loader: useContactFormLoader(),
@@ -18,13 +26,15 @@ export default component$(() => {
 
   const handleSubmit: QRL<SubmitHandler<ContactForm>> = $(
     async (values: ContactForm) => {
-      
+      loading.value = true;
+
       const subject = values.name + " (" + values.email + ")";
       const text = values.message;
 
       await sendEmail({ subject, text });
       reset(contactForm);
       showAlert.value = true;
+      loading.value = false;
     }
   );
 
@@ -68,8 +78,11 @@ export default component$(() => {
         class="w-full font-semibold py-2 rounded-md border bg-black text-white hover:shadow-xl dark:bg-blue-600 dark:border-none dark:hover:bg-blue-700 dark:hover:text-white disabled:opacity-50 transition ease-in-out duration-200"
         type="submit"
       >
-        Enviar
+        {loading.value ? "Enviando..." : "Enviar"}
       </button>
+      {loading.value && (
+        <p class="mt-2 text-blue-600">Enviando email, por favor espere...</p>
+      )}
     </Form>
   );
 });
