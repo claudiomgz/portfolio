@@ -110,13 +110,13 @@ export const projects = [
     byMe: false,
   },
   {
-    title: "Analista Desarrollador en Musimundo!",
+    title: "Analista Desarrollador en On City!",
     description:
       "Desarrollo y mantenimiento de sistemas de administración empresarial con ASP.NET Web API y frontend con Angular.",
     technologies: ["Csharp", "net", "SQLServer", "angular"],
     imageUrl: "proyecto-2",
     githubUrl: "#",
-    websiteUrl: "http://www.musimundo.com/",
+    websiteUrl: "https://www.oncity.com/",
     updatedAt: `${new Date().getFullYear()}-${
       new Date().getMonth() + 1
     }-${new Date().getDate()}`,
